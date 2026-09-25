@@ -120,9 +120,9 @@ The diagram is intentionally high-level and is not an implementation guide.
 | --- | --- |
 | CarDataOne | [cardataone.com](https://cardataone.com) |
 | Norway / Regnrbil | [regnrbil.no](https://regnrbil.no) |
-| Sweden | [cardataone.com/se/](https://www.cardataone.com/se/) |
-| Denmark | [cardataone.com/dk/](https://www.cardataone.com/dk/) |
-| Finland | [cardataone.com/fi/](https://www.cardataone.com/fi/) |
+| Sweden | [cardataone.com/se/](https://cardataone.com/se/) |
+| Denmark | [cardataone.com/dk/](https://cardataone.com/dk/) |
+| Finland | [cardataone.com/fi/](https://cardataone.com/fi/) |
 
 ---
 
