@@ -28,31 +28,70 @@ This profile is a public company presentation. It intentionally shows only the p
 
 ## Platform structure
 
+CarDataOne is the top-level platform and the central owner of the customer relationship.
+
 ```mermaid
 flowchart TB
-    U[Customers · Partners · Enterprise]
-    C[CarDataOne]
-    N[Norway]
-    S[Sweden]
-    D[Denmark]
-    F[Finland]
-    P[Vehicle Reports · Dashboard+ · Enterprise]
-    A[Analytics · AI · 3D · Automotive Intelligence]
-    G[Security Governance]
+    CDO[CarDataOne]
 
-    U --> C
-    C --> N
-    C --> S
-    C --> D
-    C --> F
-    N --> P
-    S --> P
-    D --> P
-    F --> P
-    P --> A
-    G -.-> C
-    G -.-> P
+    NO[Norway]
+    SE[Sweden]
+    DK[Denmark]
+    FI[Finland]
+
+    CUSTOMER[Customer]
+
+    REPORT[Vehicle Report<br/>Complete Vehicle Analysis]
+    DASH[Dashboard+]
+    ENT[Enterprise]
+    ANALYTICS[Analytics & Insights]
+
+    PARTNERS[Partner Network<br/>Service · Repair · Follow-up]
+
+    APP[CarDataOne App & Subscription<br/>Notifications · Service reminders · Ongoing follow-up]
+
+    CDO --> NO
+    CDO --> SE
+    CDO --> DK
+    CDO --> FI
+
+    NO --> CUSTOMER
+    SE --> CUSTOMER
+    DK --> CUSTOMER
+    FI --> CUSTOMER
+
+    CUSTOMER --> REPORT
+    CUSTOMER --> DASH
+    CUSTOMER --> ENT
+    CUSTOMER --> ANALYTICS
+
+    REPORT --> PARTNERS
+    DASH --> PARTNERS
+    ENT --> PARTNERS
+    ANALYTICS --> PARTNERS
+
+    PARTNERS --> APP
+    APP --> CDO
+    CDO --> CUSTOMER
 ```
+
+The public market platforms in Norway, Sweden, Denmark and Finland are CarDataOne's customer-acquisition channels. From there, customers can move into vehicle reports, complete analysis, Dashboard+, Enterprise and analytics services.
+
+After analysis or reporting, the customer journey can continue through CarDataOne's partner network for service, repair and related follow-up. The relationship does not end when a report is delivered or a repair is completed.
+
+CarDataOne's long-term model is to retain the customer through the CarDataOne app and subscription relationship, including notifications, service reminders, continued vehicle follow-up and direct communication. This creates a recurring lifecycle where the same customer can return for future reports, analysis, service events and partner services over many years.
+
+### Customer lifecycle
+
+**Acquire → Analyze → Act → Retain → Repeat**
+
+1. **Acquire** — CarDataOne reaches customers through the Norway, Sweden, Denmark and Finland platforms.
+2. **Analyze** — the customer can purchase vehicle reports, complete analysis, Dashboard+ or Enterprise services.
+3. **Act** — relevant partner services can support service, repair and vehicle follow-up.
+4. **Retain** — the customer remains connected through the CarDataOne app, subscription, notifications and service reminders.
+5. **Repeat** — the same customer can return for future reports, analysis, service and partner services without leaving the CarDataOne ecosystem.
+
+The objective is a long-term customer relationship rather than a single transaction. A customer may use one report or remain connected to CarDataOne across many vehicles, reports, service events and years.
 
 The diagram is intentionally high-level and is not an implementation guide.
 
@@ -122,6 +161,6 @@ This public profile presents CarDataOne / Regnrbil at company and platform level
 
 [cardataone.com](https://cardataone.com)
 
-<sub>Profile README · V1.3.0 · 2026-09-25</sub>
+<sub>Profile README · V1.4.0 · 2026-09-25</sub>
 
 </div>
